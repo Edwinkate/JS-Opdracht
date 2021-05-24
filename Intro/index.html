@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Antwoorden van de vragen. -->
+    <h3>Opdracht 1:</h3>
+    <p>Hier krijg ik een foutmelding omdat de variable tussen aanhalingstekens staat.</p>
+
+    <h3>Opdracht 2:</h3>
+    <p>getal2undefined <br>
+        getal23 na toekennen van een nummer aan de variable
+    </p>
+
+    <h3>Opdracht​ 3:</h3>
+    <p>let getal3 = 3</p>
+
+    <h3>Opdracht 4:</h3>
+    <p>let getal3 = 5. uitkomst is 'getal35'</p>
+
+    <h3>Opdracht 5:</h3>
+    <p>Uitkomst 'datatypeboolean' in console. <br>
+        de waarde false is een Boolean type.</p>
+
+    <h3>Opdracht 6:</h3>
+    <p>Een String staat tussen aanhalingstekens: let name = "auto" <br>
+        Een number is gewoon een nummer en staat niet tussen aanhalingstekens: let number = 55 <br>
+        Een BigInt is vergelijkbaar met een number, alleen staat er een n achter: const bigint = 12345n <br>
+        Een symbol wordt gebruikt om een waarde een unieke key te geven: let sum1 = symbol()</p>
+
+    <h3>Opdracht 7:</h3>
+    <p> let num1 = 6 <br>
+        let num2 = 8 <br>
+        console.log(num1 + num2); antwoord: 14<br>
+        console.log(num1 - num2); antwoord: -2 <br>
+        console.log(num1 * num2); antwoord: 48 <br>
+        console.log(num2 / num1); antwoord: 1.33</p>
+
+    <h3>Opdracht 8:</h3>
+    <p>3+5*10/2 = 28 <br>
+        let num1 = 3 <br>
+        let num2 = 5 <br>
+        let num3 = 10 <br>
+        let num4 = 2 <br>
+        console.log(num1 + num2 * num3 / num4); Antwoord idd 28.</p>
+
+    <h3>Opdracht 9:</h3>
+    <p>1+2. <br> let number = 3;<br>
+        number++;<br>
+        console.log(number); Antwoord is 4. bij ++ wordt er 1 bij opgeteld. <br>
+        3+4. <br> let number = 3;<br>
+        number--;<br>
+        console.log(number); Antwoord is 2. Bij -- wordt er 1 van afgetrokken. <br>
+        5+6. <br> Uitkomst is 5. Number++ geeft aan dat er een optelsom komt en +2 geeft aan wat erbij opgeteld moet
+        worden. <br>
+        7+8. <br>let number = 3;<br>
+        const sum = ++number + 2;<br>
+        console.log(sum); Antwoord is 6, ++ geeft aan dat er eerst 1 opgeteld moet worden en daarna moeten er nog 2 bij
+        opgeteld worden. <br>
+    </p>
+
+    <h3>Opdracht 10:</h3>
+    <p>let number = 3;<br>
+        number += 4;<br>
+        console.log(number); antwoord is 7. Men begint met getal 3, number+ geeft aan dat er opgeteld gaat worden en 4
+        geeft aan met hoeveel. <br>
+        kan ook met: <br>
+        let number = 3; <br>
+        const sum = number++ + 4;<br>
+        console.log(sum);
+    </p>
+    <h3>Opdracht 11:</h3>
+    <p>let number = 3;<br>
+        number += 4;<br>
+        number -= 2;<br>
+        number /= 5;<br>
+        number *= 4;<br>
+        console.log(number); Antwoord is: 4. Javascript leest van boven naar beneden. dus in dit geval worden niet de
+        rekenregels toegepast.
+    </p>
+    <h3>Opdracht 12:</h3>
+    <p>let firstname = "Voornaam";<br>
+        let lastname = "Achternaam";<br>
+        console.log(firstname + lastname); Verschil t.o.v numbers is dat deze waarden niet worden opgeteld maar dat ze
+        achter elkaar komen te staan.
+    </p>
+    <h3>Opdracht 13:</h3>
+    <p>let string = "3";<br>
+        let number = 3;<br>
+        let combinedText = string + number;<br>
+        console.log(combinedText); Antwoord is 33. "3" wordt gezien als een string en niet als een number. vandaar dat
+        je 33 krijgt en niet 6.</p>
+
+    <h3>Opdracht 14:</h3>
+    <p>
+        Je kan in een string een single quote gebruiken als je in de waarde een double quote moet gebruiken. <br>
+        Voorbeeld: const div = '&lt;div class="panel"&gt;...&lt;&sol;div&gt;'
+    </p>
+    <h3>Opdracht 15:</h3>
+    <p>let text = "text";<br>
+        text += "another text";<br>
+        console.log(text); Antwoord: textanother text. <br>
+        Kan ook zo: <br>
+        let text = "text";<br>
+        const sum = text + "another text"<br>
+        console.log(sum);<br>
+    </p>
+    <h3>Opdracht 16:</h3>
+    <p>
+        1. charAt(). <br>
+        const sentence = 'The quick brown fox jumps over the lazy dog.';<br>
+        const index = 4;<br>
+        console.log(sentence.charAt(index)); Returns het 4de karakter van de string. in dit geval "q". <br>
+        2. concat(). <br>
+        const str1 = 'Hello';<br>
+        const str2 = 'World';<br>
+        console.log(str1.concat(' ', str2)); geeft: "Hello World"<br>
+        console.log(str2.concat(', ', str1)); geeft: "World, Hello"<br>
+        concat voegt de strings samen en maakt er een nieuwe string van. <br>
+        3.slice(). <br>
+        let str1 = 'The morning is upon us.';<br>
+        str2 = str1.slice(1, 8);<br>
+        str3 = str1.slice(4, -2);<br>
+        console.log(str2); Antwoord is: he morn. <br>
+        console.log(str3); Antwoord is: morning is upon u <br>
+        Bij Slice kunnen delen van een string geselecteerd worden. De nummers geven aan wat geselecteerd wordt. <br>
+        4. Split(). <br>
+        const str = 'The quick brown fox jumps over the lazy dog.';<br>
+        const words = str.split(' ');<br>
+        console.log(words[3]); Resulteerd in "fox" <br>
+        Met split wordt het vierde woord geretourneerd. Begin tellen met "0". <br>
+        5. substr(). <br>
+        const str = 'Mozilla';<br>
+        console.log(str.substr(1, 2)); Retourneerd: "oz" <br>
+        console.log(str.substr(2)); Retourneerd: "zilla" <br>
+        Retourneerd een deel van de tekenreeks, beginnend bij de opgegeven index en daarna een bepaald aantal tekens.
+        <br>
+    </p>
+
+
+
+
+
+
+    <script>
+        // Het codeer gedeelte
+
+        const sentence = 'The quick brown fox jumps over the lazy dog.';
+        const index = 4;
+        console.log(sentence.charAt(index));
+
+
+    </script>
+
+</body>
+
+</html>
