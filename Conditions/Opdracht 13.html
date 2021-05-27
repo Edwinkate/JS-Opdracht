@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Translate months</h1>
+
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translateMonth"></div>
+
+    <script>
+
+        function translateMonth() {
+
+            let num = Number(number.value);
+            if (num == 1) {
+                document.getElementById("translateMonth").innerHTML = "Januari"
+            }
+            else if (num == 2) {
+                document.getElementById("translateMonth").innerHTML = "Februari"
+            }
+            else if (num == 3) {
+                document.getElementById("translateMonth").innerHTML = "Maart"
+            }
+            else if (num == 4) {
+                document.getElementById("translateMonth").innerHTML = "April"
+            }
+            else if (num == 5) {
+                document.getElementById("translateMonth").innerHTML = "Mei"
+            }
+            else if (num == 6) {
+                document.getElementById("translateMonth").innerHTML = "Juni"
+            }
+            else if (num == 7) {
+                document.getElementById("translateMonth").innerHTML = "Juli"
+            }
+            else if (num == 8) {
+                document.getElementById("translateMonth").innerHTML = "Augustus"
+            }
+            else if (num == 9) {
+                document.getElementById("translateMonth").innerHTML = "September"
+            }
+            else if (num == 10) {
+                document.getElementById("translateMonth").innerHTML = "Oktober"
+            }
+            else if (num == 11) {
+                document.getElementById("translateMonth").innerHTML = "November"
+            }
+            else if (num == 12) {
+                document.getElementById("translateMonth").innerHTML = "December"
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

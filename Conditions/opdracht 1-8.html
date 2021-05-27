@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+
+    <div>
+        <span id="label"></span>
+    </div>
+
+
+    <script>
+
+        function checkNumber() {
+            const num = Number(document.getElementById("number").value);
+            // Opdracht 1
+            if (num === 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 3."
+            }
+            // Opdracht 2
+            else if (num > 4 && num < 11) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is groter dan 4."
+            }
+            // Opdracht 3
+            else if (num >= 11) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11."
+            }
+            // Opdracht 4
+            else if (num < 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is kleiner dan 3."
+            }
+            else {
+                document.getElementById("label").innerHTML = " "
+            }
+        }
+            // Opdracht 5
+            // Het verschil tussen < en <= is dat < kleiner dan betekent en <= betekent klaeiner dan en gelijk aan.
+
+            // Opdracht 6
+            // ! comparison betekent not equal. betekent dus "niet hetzelfde. "
+
+            // Opdracht 7
+
+    </script>
+
+</body>
+
+</html>

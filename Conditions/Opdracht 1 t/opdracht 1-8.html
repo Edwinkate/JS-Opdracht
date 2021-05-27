@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+
+
+    <div>
+        <span id="label"></span>
+    </div>
+
+
+    <script>
+
+        function checkNumber() {
+            // Opdracht 1
+            if (document.getElementById("number").value === "3") {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 3."
+            }
+            // Opdracht 2
+            else if (document.getElementById("number").value > "4") {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is groter dan 4."
+            }
+            // Opdracht 3
+            else if (document.getElementById("number").value >= "11") {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 11 of groter dan 11."
+            }
+            // Opdracht 4
+            else if (document.getElementById("number").value < "3") {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is kleiner dan 3."
+            }
+            // Opdracht 7
+            else {
+                document.getElementById("label").innerHTML = " "
+            }
+        }
+            // Opdracht 5
+            // Het verschil tussen < en <= is dat < kleiner dan betekent en <= betekent kleiner dan en gelijk aan.
+
+            // Opdracht 6
+            // ! comparison betekent not equal. betekent dus "niet hetzelfde. "
+
+            // Opdracht 8
+                // Wat is een strict equality comparison ?
+                // Dan wordt er gecontroleerd of en de waarde hetzelfde is en het type.
+
+    </script>
+
+</body>
+
+</html>
