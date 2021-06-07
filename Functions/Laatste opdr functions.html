@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Wiskunde</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td id="wiskundeWillem">3</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>5.5</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Natuurkunde</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td id="natuurkundeWillem">7</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>5.5</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Nederlands</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>8.5</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>4</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>Engels</h1>
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td>5.5</td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td>4.3</td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td>5.5</td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="resultaatbox">
+        <h1>Resultaat gemiddeld</h1>
+        <table>
+            <tr>
+                <th>Naam</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr>
+                <td>Willem</td>
+                <td id="WillemBetaResultaat"></td>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Kim Sing</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Samantha</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Joyce</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gareth</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <script>
+
+        let wiskundecijferwillem = parseInt(document.getElementById("wiskundeWillem").innerHTML);
+        let natuurkundecijferwillem = parseInt(document.getElementById("natuurkundeWillem").innerHTML);
+
+        let resultaatBetaWillem = (wiskundecijferwillem + natuurkundecijferwillem) / 2;
+        console.log(resultaatBetaWillem);
+
+        function WillemBeta() {
+            document.getElementById("WillemBetaResultaat").innerHTML = resultaatBetaWillem;
+        }
+        WillemBeta();
+
+    </script>
+
+
+
+</body>
+
+</html>
